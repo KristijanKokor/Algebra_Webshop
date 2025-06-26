@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Checkout | Web Shop</title>
+    </head>
+    <body>
+        <h1>Web shop</h1>
+        <h2>Checkout</h2>
+        <form action="Success.html" method="get">
+            <label>Name: <input type="text" required id="sender_first_name" placeholder="Jaina"></label>
+            <hr>
+            <label>Surname: <input type="text" required id="sender-last_name"placeholder="Proudmoore"></label>
+            <hr>
+            <label>Email: <input type="email" required placeholder="jaina.proudmoore@dalaran.com" id="sendder_email"></label>
+            <hr>
+            <label>Phone: <input type="tel" placeholder="+123456789" id="sender_phone" required></label>
+            <hr>
+            <label>Address Line 1: <input type="text" required id="sender_address_line_1" placeholder="Dustwallow Marsh"></label>
+            <hr>
+            <label>Address Line 2: <input type="text"  id="sender_address_line_2" placeholder="Kalimdor"></label>
+            <hr>
+            <label>City: <input type="text" required id="sender_city" placeholder="Theramore"></label>
+            <hr>
+            <label>ZIP Code: <input type="text" required id="sender_zip"></label>
+            <hr>
+            <label>Country:
+                <select id="sender_country" required>
+                    <option disabled selected>Choose a country</option>
+                    <option id="hr">Hrvatska</option>
+                    <option id="ba">Bosna i Hercegovina</option>
+                    <option id="rs">Srbija</option>
+                    <option id="mk">Makedonija</option>
+                    <option id="al">Albanija</option>
+                    <option id="si">Slovenija</option>
+                </select>
+            </label>
+            <hr>
+            <label required>Payment method:
+                <label><input type="radio" name="payment_method" id="credit">Credit</label>
+                <label><input type="radio" name="payment_method" id="debit">Debit</label>
+                <label><input type="radio" name="payment_method" id="paypal">Paypal</label>
+            </label>
+            <hr>
+            <label>Payment Card Holder: <input type="text" id="payment_card_hold" required></label>
+            <hr>
+            <label>Payment Card Number: <input type="number" id="payment_card_number" required></label>
+            <hr>
+            <label>Payment Card Expiration Month: 
+                <hr>
+                <input type="number" required minlength="2" maxlength="2"> - month</input>
+                <hr>
+                <input type="number" required minlength="2" maxlength="2"> - year</input>
+            </label>
+            <hr>
+            <button type="submit">Continue ></button>
+        </form>
+    </body>
+</html>
